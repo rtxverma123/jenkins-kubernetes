@@ -14,6 +14,7 @@ spec:
        spec: 
           containers:
              - name: mynginx
-               image: nginx:latest
+               image: rtxverma123/flaskkubernetes
+          imagePullPolicy: Always
                ports:
                  - containerPort: 8080   
