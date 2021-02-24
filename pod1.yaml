@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -12,9 +13,9 @@ spec:
            labels:
               app: jenkinskubernetes
        spec: 
-          containers:
-             - name: mynginx
+         containers:
+             - name: flaskk8s
                image: rtxverma123/flaskkubernetes
-          imagePullPolicy: Always
                ports:
-                 - containerPort: 8080   
+                 - containerPort: 8080
+         imagePullPolicy: Always
