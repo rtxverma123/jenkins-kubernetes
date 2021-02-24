@@ -18,4 +18,4 @@ spec:
                image: rtxverma123/flaskkubernetes
                ports:
                  - containerPort: 8080
-         imagePullPolicy: Always
+         
