@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+     name: myjenkins
+spec:
+   replicas: 2
+   selector:
+      matchLabels:
+            app: jenkinskubernetes
+   template:
+       metadata:
+           labels:
+              app: jenkinskubernetes
+       spec: 
+          containers:
+             - name: mynginx
+               image: nginx:latest
+               ports:
+                 - containerPort: 8080   
